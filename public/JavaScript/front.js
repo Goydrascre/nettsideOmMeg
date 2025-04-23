@@ -12,7 +12,10 @@ if (dynamicBackground) {
 } else {
   document.body.classList.remove('dynamic-background');
 }
-
+if (dynamicBackground === null) {
+  // Hvis det ikke finnes data i localStorage, sett til 'true' som standard
+  dynamicBackground = true;
+}
 // Lytt etter musebevegelser for å oppdatere bakgrunnsfargen når effekten er aktiv
 document.addEventListener("mousemove", function (e) {
   if (!dynamicBackground) return; // Hvis dynamisk bakgrunn ikke er aktiv, gjør ingenting
