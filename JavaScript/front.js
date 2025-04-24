@@ -42,9 +42,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const x = e.clientX / window.innerWidth;
     const y = e.clientY / window.innerHeight;
-    const red = Math.floor(x * 220);
-    const green = Math.floor(y * 220);
-    const blue = Math.floor((1 - x) * 220);
+    const red = Math.floor(x * 200);
+    const green = Math.floor(y * 200);
+    const blue = Math.floor((1 - x) * 200);
     const newColor = `rgba(${red}, ${green}, ${blue}, 0.2)`;
 
     document.body.style.setProperty('--overlay-color', newColor);

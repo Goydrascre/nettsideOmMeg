@@ -88,12 +88,6 @@ section {
   padding: 2rem;
   border-radius: 10px;
 }
-
-h1 {
-  color: #333;
-  font-size: 90px;
-  margin-bottom: 20px;
-}
 p1 {
   color: #333;
   font-size: 20px;
@@ -155,6 +149,11 @@ label {
     display: none;
   }
 }
+h1 {
+  color: #333;
+  font-size: 55px;
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
   .top-bar.mobil {
     display: block;
@@ -167,7 +166,11 @@ label {
     justify-content: flex-end;
     padding: 1rem; 
   }
-
+  h1 {
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
   .nav-links {
     position: fixed;
     top: 0;
@@ -197,4 +200,30 @@ label {
   padding: 0.3rem;
   border-radius: 5px;
   border: none;
+}
+
+.box {
+  background: linear-gradient(135deg, #2c3e50, #00ffff);
+  color: white;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease;
+}
+.box:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
